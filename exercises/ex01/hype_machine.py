@@ -1,5 +1,11 @@
-# TODO: Write docstring here
+"""This is EX01 input and variables: Hype Machine"""
 
-# TODO: Initialize __author__ variable here
+__author__ = ("730385108")
 
-# TODO: Implement your program logic here
+name: str = input("What is your name? ")
+print("You entered: ")
+print(name)
+
+print(name + ", you look amazing today!")
+print("I hope your day is going well " + name + "!")
+print("I believe you, " + name + ", will do great things today!")
