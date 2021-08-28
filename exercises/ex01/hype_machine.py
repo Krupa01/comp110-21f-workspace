@@ -1,4 +1,4 @@
-"""This is EX01 input and variables: Hype Machine"""
+"""This is EX01 input and variables: Hype Machine. In this exercise I had to write a code in which a user can input thier name and would receive responses that would contain thier name in the beginning, middle, and end of a sentence."""
 
 __author__ = ("730385108")
 
