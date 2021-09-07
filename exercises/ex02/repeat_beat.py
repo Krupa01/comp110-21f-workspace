@@ -9,4 +9,5 @@ counter = int = 0
 if counter < repeat:
     print((beat + " ") * (repeat - 1), beat)
 else: 
-    print("No beat...")
+    if repeat <= 0:
+        print("No beat...")
