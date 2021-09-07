@@ -5,6 +5,7 @@ __author__ = "730385108"
 
 letter = input("What letter do you want to seach for?: ")
 word = input("Enter a word: ")
+
 counter = 0
 i = 0
 
