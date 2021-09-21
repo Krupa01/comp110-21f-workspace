@@ -66,6 +66,7 @@ def game(n: int, a: int) -> int:
 
 
 def quit_game() -> None:
+    """Quit."""
     print(f"Thanks for playing! You have earned {points} this game! {YAY}")
     quit()
 
