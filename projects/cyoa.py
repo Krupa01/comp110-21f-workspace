@@ -33,16 +33,62 @@ def main() -> None:
         prompt = str(input("Would you like to guess the magic number between a) 1-10, b) 1-50, or c) 1-100 ? Please type a , b, or c. If you would like to leave the game type 'quit'. "))
         print(prompt)
         if prompt == "a":
-            game(10, 5)
+            game1(10, 5)
         elif prompt == "b":
-            game(50, 5)
+            game2(50, 5)
         elif prompt == "c":
-            game(100, 5)
+            game3(100, 5)
         elif prompt == "quit": 
             quit_game()
 
 
-def game(n: int, a: int) -> int:
+def game1(n: int, a: int) -> int:
+    """This contains the code that will run the game. It will ask user for input and whether they got it right or wrong."""
+    print(f"You choose to guess a number that is between 1 - {n}.")
+    global points
+    magic_number = random.randint(1, n)
+    t: int = 0
+    while t < a:
+        guess = int(input("What's your guess?: "))
+        if guess == magic_number:
+            print(f"You got it! {SMILE}")
+            points += 1
+            return points
+        else:
+            if guess > magic_number:
+                print(f"Guess lower {DOWN}")
+            else:
+                print(f"Guess Higher {UP}")
+        t += 1
+    print(f"Out of attempts, try playing again. {SAD}")
+    print(f"So far you have {points} points. {YAY}")
+    return(points)
+
+
+def game2(n: int, a: int) -> int:
+    """This contains the code that will run the game. It will ask user for input and whether they got it right or wrong."""
+    print(f"You choose to guess a number that is between 1 - {n}.")
+    global points
+    magic_number = random.randint(1, n)
+    t: int = 0
+    while t < a:
+        guess = int(input("What's your guess?: "))
+        if guess == magic_number:
+            print(f"You got it! {SMILE}")
+            points += 1
+            return points
+        else:
+            if guess > magic_number:
+                print(f"Guess lower {DOWN}")
+            else:
+                print(f"Guess Higher {UP}")
+        t += 1
+    print(f"Out of attempts, try playing again. {SAD}")
+    print(f"So far you have {points} points. {YAY}")
+    return(points)
+
+
+def game3(n: int, a: int) -> int:
     """This contains the code that will run the game. It will ask user for input and whether they got it right or wrong."""
     print(f"You choose to guess a number that is between 1 - {n}.")
     global points
