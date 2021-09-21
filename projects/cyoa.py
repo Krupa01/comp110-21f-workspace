@@ -43,7 +43,7 @@ def main() -> None:
 
 
 def game(n: int, a: int) -> int:
-    """This contains the code that will run the game. It will ask user for input and whether they got it right or wrong. """
+    """This contains the code that will run the game. It will ask user for input and whether they got it right or wrong."""
     print(f"You choose to guess a number that is between 1 - {n}.")
     global points
     magic_number = random.randint(1, n)
