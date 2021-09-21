@@ -43,7 +43,7 @@ def main() -> None:
 
 
 def game1(n: int, a: int) -> int:
-    """This contains the code that will run the game. It will ask user for input and whether they got it right or wrong."""
+    """This contains the code that will run game1, if the user has selected the range 1-10 It will ask user for input and whether they got it right or wrong."""
     print(f"You choose to guess a number that is between 1 - {n}.")
     global points
     magic_number = random.randint(1, n)
@@ -66,7 +66,7 @@ def game1(n: int, a: int) -> int:
 
 
 def game2(n: int, a: int) -> int:
-    """This contains the code that will run the game. It will ask user for input and whether they got it right or wrong."""
+    """This contains the code that will run the game2, if the user has selected the range 1-50. It will ask user for input and whether they got it right or wrong."""
     print(f"You choose to guess a number that is between 1 - {n}.")
     global points
     magic_number = random.randint(1, n)
@@ -89,7 +89,7 @@ def game2(n: int, a: int) -> int:
 
 
 def game3(n: int, a: int) -> int:
-    """This contains the code that will run the game. It will ask user for input and whether they got it right or wrong."""
+    """This contains the code that will run the game3, if the user has selected the range 1-100. It will ask user for input and whether they got it right or wrong."""
     print(f"You choose to guess a number that is between 1 - {n}.")
     global points
     magic_number = random.randint(1, n)
