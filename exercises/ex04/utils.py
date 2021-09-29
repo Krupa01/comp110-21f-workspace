@@ -21,8 +21,8 @@ def is_equal(x: list[int], y: list[int]) -> bool:
     """Function two returns True if both lists are the same."""
     it: int = 0 
     ji: bool = False 
-    if len(x) == 0:
-        print("Insert something here once u fix whatever you are tryign to do something") 
+    if len(x) == 0 and len(y) == 0:
+        return True
     while it < len(x) and it < len(y):
         if len(x) == len(y):
             if x[it] == y[it]:
