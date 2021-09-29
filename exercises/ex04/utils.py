@@ -3,7 +3,7 @@
 __author__ = "730385108"
 
 
-def all(x: list[int], y: int) -> bool:
+def all(x: list[int], y: int, ) -> bool:
     """This is the first function that returns a bool."""
     j: bool = False
     i: int = 0
