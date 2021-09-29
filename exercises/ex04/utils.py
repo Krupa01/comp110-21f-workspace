@@ -3,12 +3,12 @@
 __author__ = "730385108"
 
 
-def all(x: int, y: list[int]) -> bool:
+def all(x: list[int], y: int, ) -> bool:
     """This is the first function that returns a bool."""
     j: bool = False
     i: int = 0
-    while i < len(y):
-        if y[i] == x:
+    while i < len(x):
+        if x[i] == y:
             j = True
             i += 1
         else:
