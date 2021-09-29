@@ -38,8 +38,10 @@ def max(input: list[int]) -> int:
     """The last functions find the max in the list.""" 
     if len(input) == 0:
         raise ValueError("max() arg is an empty List") 
-    for x in range(0, len(input)): 
-        if(input[i] > i): 
-            input[i] = i
-    return i 
+    else:
+        maxim = input[0]
+        for number in input:
+            if number > maxim:
+                maxim = number
+    return maxim 
 
