@@ -3,7 +3,7 @@
 __author__ = "730385108"
 
 
-def all(x: list[int], y: int, ) -> bool:
+def all(x: list[int], y: int) -> bool:
     """This is the first function that returns a bool."""
     j: bool = False
     i: int = 0
@@ -17,17 +17,19 @@ def all(x: list[int], y: int, ) -> bool:
     return j
 
 
-def is_equal(x: list[int], y: list[int]) -> int:
+def is_equal(x: list[int], y: list[int]) -> bool:
     """Function two returns True if both lists are the same."""
     i: int = 0 
-    count: int = 0
     j: bool = False 
-    while len(x) == len(y):
-        if x[i] == y[i]:
-            count += 1
-        if count == len(x): 
-            j = True
-        i += 1
+    if len(x) = 0 
+    while i < len(x) and i < len(y):
+        if len(x) == len(y):
+            if x[i] == y[i]:
+                j = True
+                i += 1
+            else:
+                j = False
+                return False
     return j 
 
 
