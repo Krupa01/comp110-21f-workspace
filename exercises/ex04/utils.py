@@ -31,6 +31,8 @@ def is_equal(x: list[int], y: list[int]) -> bool:
             else:
                 ji = False
                 return False
+        else: 
+            return False 
     return ji 
 
 
@@ -44,4 +46,3 @@ def max(input: list[int]) -> int:
             if number > maxim:
                 maxim = number
     return maxim 
-
