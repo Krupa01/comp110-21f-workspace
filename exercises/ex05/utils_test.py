@@ -23,22 +23,22 @@ def test_only_evens2() -> None:
     assert only_evens(x) == []
 
 
-def test_sub1() -> None: 
-    z: list[int] = [1]
-    x: int 
-    y: int 
-    assert sub(z, x, y) == 1
-
-
 def test_sub2() -> None: 
     z: list[int] = [1, 2, 3, 4, 5]
-    x: 3
-    y: 4
-    assert sub(z, x, y) == [4, 5]
+    x = 3
+    y = 4
+    assert sub(z, x, y) == [4]
 
-
+    
 def test_sub3() -> None: 
     z: list[int] = [10, 20, 30, 40]
     x: int = 1
+    y: int = 5
+    assert sub(z, x, y) == [20, 30, 40]
+
+
+def test_sub4() -> None: 
+    z: list[int] = [1, 2, 3, 4]
+    x: int = 1
     y: int = 3
-    assert sub(z, x, y) == [20, 40]
+    assert sub(z, x, y) == [2, 3]
