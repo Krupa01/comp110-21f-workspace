@@ -2,8 +2,7 @@
 
 # TODO: Uncomment the below line when ready to write unit tests
 
-from exercises.ex05.utils import only_evens, sub
-# , concat
+from exercises.ex05.utils import only_evens, sub, concat
 
 __author__ = "730385108"
 
@@ -42,3 +41,21 @@ def test_sub4() -> None:
     x: int = 1
     y: int = 3
     assert sub(z, x, y) == [2, 3]
+
+
+def test_concat() -> None: 
+    x: list[int] = [1, 2, 3]
+    y: list[int] = [4, 5, 6]
+    assert concat(x, y) == [1, 2, 3, 4, 5, 6]
+
+
+def test_concat1() -> None: 
+    x: list[int] = [1, 2]
+    y: list[int] = [5, 6]
+    assert concat(x, y) == [1, 2, 5, 6]
+
+
+def test_concat2() -> None: 
+    x: list[int] = [3, 6, 9]
+    y: list[int] = [2, 4, 6]
+    assert concat(x, y) == [3, 6, 9, 2, 4, 6]

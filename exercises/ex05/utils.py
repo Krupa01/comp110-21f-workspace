@@ -17,7 +17,7 @@ def only_evens(x: list[int]) -> list[int]:
 
 
 def sub(z: list[int], x: int, y: int) -> list[int]: 
-    """This function creates a subset"""
+    """This function creates a subset."""
     i: int = 0
     lists = list()
     end: int = y
@@ -40,3 +40,17 @@ def sub(z: list[int], x: int, y: int) -> list[int]:
             i += 1
         return lists
     return z
+
+
+def concat(x: list[int], y: list[int]) -> list[int]:
+    """This function concats two lists."""
+    con = list()
+    i: int = 0
+    count: int = 0
+    while len(y) > i: 
+        con.append(y[i])
+        i += 1
+    while len(x) > count: 
+        con.append(x[count])
+        count += 1 
+    return con
