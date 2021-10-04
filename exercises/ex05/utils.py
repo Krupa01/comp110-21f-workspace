@@ -24,6 +24,11 @@ def sub(z: list[int], x: int, y: int) -> list[int]:
     start: int = x
     if len(z) == 0 or end <= 0 or len(z) < start:
         return lists
+    elif len(z) < end: 
+        while len(z) > start:
+            lists.append(z[start])
+            start += 1 
+        return lists
     elif start >= 0: 
         while end > start: 
             lists.append(z[start])
@@ -34,9 +39,4 @@ def sub(z: list[int], x: int, y: int) -> list[int]:
             lists.append(z[i])
             i += 1
         return lists
-    elif len(z) < end: 
-        while len(z) > start:
-            lists.append(z[start])
-            start += 1 
-        return lists 
     return z
